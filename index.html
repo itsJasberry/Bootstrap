@@ -11,21 +11,75 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Wowww123</h1>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ratione explicabo at veritatis officiis deserunt quod eveniet sit laboriosam labore. Dolorem rem eveniet aspernatur maxime laboriosam placeat enim fugit culpa!
-      Incidunt culpa eaque ad ex magnam iste porro tempore corporis facilis voluptate minus nisi sed ab, quasi aspernatur repudiandae nulla mollitia molestias vero cumque rerum quia inventore eius! Saepe, tenetur.
-      Quo maxime fugiat quia, deserunt qui ratione quidem saepe magni nulla eos sint tempore reiciendis nemo iusto ex eius blanditiis animi. Officiis quibusdam aliquam dolore et amet fugit iusto facilis!
-      Magni eveniet, eius architecto, aut voluptate iusto fugit beatae officiis necessitatibus voluptates hic molestias perspiciatis dolore perferendis laborum dolor. Optio aut nostrum dignissimos itaque atque officia unde ad maiores sint?
-      Dolores, totam. Libero reiciendis quibusdam soluta ipsum sapiente, distinctio repellendus eligendi iusto fuga ad delectus molestias quos inventore earum possimus voluptate veritatis qui! Eius, quas pariatur nostrum voluptates sequi quod?
-      Repudiandae, alias nulla? Fugit facilis ipsa neque non! Tempore repudiandae fuga autem dicta debitis fugit error voluptatum aliquid? Laborum, exercitationem voluptas? Perspiciatis perferendis, accusamus dolor deserunt porro suscipit impedit nam.
-      Dolores quam maxime, aliquid debitis quas, asperiores minus ut dolore deleniti reprehenderit autem, in obcaecati! Corporis, optio deserunt. Aut vel laborum maxime recusandae officia, maiores amet autem eligendi corrupti illo.
-      Rerum tenetur explicabo in amet pariatur quaerat, illum nesciunt asperiores aliquam similique fugiat quod mollitia! Dolores optio numquam repellendus adipisci quod maxime voluptatem, non vitae voluptates unde molestias ut soluta?
-      Laudantium reprehenderit harum debitis et nobis deserunt velit reiciendis sequi ex dolor asperiores voluptatem corrupti doloremque quia rerum deleniti, qui distinctio quod cumque molestias nemo necessitatibus mollitia? Molestiae, accusamus exercitationem?
-      Totam architecto excepturi harum! Provident, nisi. Magni eaque magnam quae fuga, inventore molestiae est ipsa iure error eos. Nobis vel nisi corporis iure nostrum reprehenderit labore dicta delectus explicabo incidunt?</p>
+<div class="container">
+ <h1 class="display-2">Forms</h1>
+  <form action="nowhere">
+    
+    <div class="formgroup">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="email">
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="password">
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <select class="form-control" name="state" id="state">
+        <option value="AL">Alabama </option>
+        <option value="AK">Alaska</option>
+      </select>
   </div>
-  
+  </form>  
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"> Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></span>
+        </div>
+        <input type="text" class="form-control"">
+      </div>
+    </div>
+  </div>
+ 
+</div>
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
